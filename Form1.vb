@@ -20,5 +20,13 @@
                 End If
             Next
         Next
+        For F = 1 To 10
+            For C = 1 To 8
+                dtvMatriz.Item(C - 1, F - 1).Value = Matriz(F, C)
+            Next
+        Next
+        For M = 1 To 10
+            lblVector.Items.Add(vector(M))
+        Next
     End Sub
 End Class
